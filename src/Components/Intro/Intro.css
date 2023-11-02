@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'AMORIA Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AMORIA Regular'), url('../../Assets/font/AMORIA-BF64a2f6809ce9e.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Urotraman Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('urotraman-regular'), url('../../Assets/font/urotraman-regular.otf') format('woff');
+    }
+@font-face {
+    font-family: 'Nexa Bold';
+    font-style: bold;
+    font-weight: bold;
+    src: local('Nexa Bold'), url('../../Assets/font/NexaBold.ttf.woff') format('woff');
+    }
+.Intro{
+    margin-top: 30vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.IntroContainer{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+}
+.IntroLeft{
+    width: 34%;
+    font-family: 'Nexa Bold';
+    text-align: left;
+    padding: 5vw 6.5vw;
+}
+.intro_left_header{
+    text-align: right;
+    margin: 3vw 0vw;
+}
+.left_header1{
+    font-size: 4.5vw;
+    font-family: 'Urotraman Regular';
+    letter-spacing: -0.025em;
+    line-height: 90%;
+}
+.left_header2{
+    font-size: 1.2vw;
+    font-family: 'AMORIA Regular';
+    color: var(--lightAccent);
+}
+.intro_left_discription{
+    font-size: 1.5vw;
+    text-align: justify;
+}
+.IntroRight{
+    width: 59%;
+    display: flex;
+    justify-content: center;
+}
+.IntroRight img{
+    width: auto;
+    height: 40vw;
+}

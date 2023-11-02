@@ -1,0 +1,65 @@
+
+.Connect{
+    width: 100%;
+    margin-top: 30vh;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+}
+.ConnectContainer{
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.connect_header{
+    line-height: 99%;
+    font-size: 13vw;
+    font-family: 'Urotraman Regular';
+    letter-spacing: -0.0055em;
+}
+.connect_des{
+    display: flex;
+    font-size: 1.7vw;
+    align-items: center;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+.connect_button{
+    font-size: 1.2vw;
+    border-radius: 3rem;
+    border: 0.2vw solid var(--textColor);
+    padding: 0.3vw 1.2vw;
+    margin: 0.4vw;
+    text-align: center;
+    margin: 0.2vw 0.6vw;
+}
+.connect_button:hover{
+    background-color: var(--textColor);
+    color: black;
+    border: 0.2vw solid var(--textColor);
+    transition: 0.5s;
+    scale: 1.05;
+}
+.image_back hr{
+    width: 80%;
+}
+.links{
+    display: flex;
+    padding: 1vw 0vw 2vw 0vw;
+    margin: 0;
+    gap: 2vw;
+    justify-content: center;
+    list-style: none;
+    font-size: 1vw;
+}
+.links li{
+    text-transform: uppercase;
+    color: var(--textColor);
+}
+.links li:hover{
+    color: var(--lightAccent);
+    transition: 0.5s;
+    scale: 1.02;
+}
