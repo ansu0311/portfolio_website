@@ -1,0 +1,45 @@
+
+.Skills{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.SkillsContainer{
+    display: flex;
+    width: 70vw;
+}
+.SkillsLeft{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills_left_header{
+    font-size: 4.5vw;
+    font-family: 'Urotraman Regular';
+    letter-spacing: -0.025em;
+    line-height: 90%;
+    margin-bottom: 4vw;
+}
+.skills_left_list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills_left_list li{
+    font-size: 1.2vw;
+    border-radius: 3rem;
+    border: 0.2vw solid var(--textColor);
+    padding: 0.6vw 2vw;
+    margin: 0.4vw;
+    text-align: center;
+}
+.SkillsRight{
+    width: 59%;
+    display: flex;
+    justify-content: center;
+}
+.SkillsRight img{
+    width: auto;
+    height: 40vw;
+}

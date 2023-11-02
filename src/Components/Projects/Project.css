@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'AMORIA Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AMORIA Regular'), url('../../Assets/font/AMORIA-BF64a2f6809ce9e.woff') format('woff');
+    }
+.Project{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.ProjectContainer{
+    width: 65vw;
+    margin-top: 30vh;
+
+}
+.ProjectContainer p{
+    font-family: 'AMORIA Regular';
+    text-align: left;
+    font-size: 4vw;
+    margin: 0vw 0vw 1vw 1vw;
+}
+.ProjectSlab{
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ProjectLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 1.5vw;
+}
+.project_header{
+    font-family: 'Urotraman Regular';
+    letter-spacing: -0.01em;
+    line-height: 95%;
+    font-size: 4.5vw;
+}
+.project_work{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    color: var(--lightAccent);
+}
+.ProjectRight{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.pic_container{
+    width: 28vw;
+    height: 12.9vw;
+    overflow: hidden;
+    filter: drop-shadow(0.4vw 0.4vw 10px black);
+    border-radius: 1rem;
+    background-color: var(--darkAccent);
+}
+.pic_container img{
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    filter: grayscale();
+    opacity: 0.7;
+}
+.pic_container:hover img{
+    transform: scale(1.1);
+    filter: none;
+    opacity: 1;
+}
+/* .ProjectLeft_R{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.ProjectLeft_R img{
+    width: 100%;
+    transition: all 0.5s;
+    filter: grayscale();
+    opacity: 0.7;
+}
+.ProjectLeft_R:hover img{
+    transition: all 0.5s;
+    filter: none;
+    opacity: 1;
+}
+.ProjectLeft_R:hover{
+    filter: drop-shadow(0.0vw 0.0vw 15px var(--lightAccent));
+    transition: all 0.5s;
+} */
+.ProjectRight_R{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5vw;
+}
+.project_header_R{
+    font-family: 'Urotraman Regular';
+    letter-spacing: -0.01em;
+    line-height: 95%;
+    font-size: 4.5vw;
+}
+.project_work_R{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    color: var(--lightAccent);
+}
+

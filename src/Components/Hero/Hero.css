@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'AMORIA Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AMORIA Regular'), url('../../Assets/font/AMORIA-BF64a2f6809ce9e.woff') format('woff');
+    }
+.HeroContainer{
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.HeroLeft{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50vw;
+    padding:0 0 2vw 1.5vw;
+}
+.Hero_left_text1{
+    font-family: 'AMORIA Regular';
+    font-size: 3.5vw;
+    color: var(--lightAccent);
+    padding-bottom: 3vw;
+}
+.Hero_left_text2{
+    width: 30vw;
+    text-transform: uppercase;
+    font-family: 'Urotraman Regular';
+    font-size: 11.5vw;
+    line-height: 70%;
+    letter-spacing: -0.030em;
+}
+.Hero_left_text2 span{
+    display: inline;
+    font-family: 'AMORIA Regular';
+    font-size: 4.5vw;
+}
+.HeroRight{
+    width: 30vw;
+    height: 100%;
+    font-family: 'Nexa Bold';
+    font-size: 1.5vw;
+    padding: 0vw 5vw 1vw 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.available{
+    margin-top: 7vw;
+    text-align: left;
+    justify-content: right;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+}
+.date{
+    font-family: 'AMORIA Regular';
+    font-size: 5.5vw;
+}
+.date_text{
+    font-size: 1vw;
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.date_text span{
+    font-size: 1.5vw;
+    font-family: 'AMORIA Regular';
+    display: block;
+}
+.hero_discription{
+    padding: 1vw 0vw;
+    text-align: justify;
+    text-transform: uppercase;
+}
+.hero_button{
+    border: 0.2vw solid var(--textColor);
+    border-radius: 3rem;
+    width: 10vw;
+    padding: 1vw 2vw;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+}
+.hero_button:hover{
+    background-color: var(--textColor);
+    color: var(--appColor);
+    border: 0.2vw solid var(--textColor);
+    transition: 0.5s;
+    scale: 1.05;
+}

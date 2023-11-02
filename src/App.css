@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Nexa Bold';
+  font-style: bold;
+  font-weight: bold;
+  src: local('Nexa Bold'), url('../src/Assets/font/NexaBold.ttf.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Urotraman Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('urotraman-regular'), url('../src/Assets/font/urotraman-regular.otf') format('woff');
+}
+:root{
+  --appColor : rgb(17, 24, 23);
+  --textColor : #ffffff;
+  --lightAccent :#00cec3;
+  --darkAccent:  #146a66;
+}
+.App {
+  text-align: center;
+  color: var(--textColor);
+  background-color: var(--appColor);
+  font-family: 'Nexa Bold';
+  background-size: cover;
+  background-position: center;
+    background-image: url("../src/Assets/adrianna-geo-1rBg5YSi00c-unsplash.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.gradiant_map{
+  background-image: 
+  linear-gradient(180deg,rgba(17, 24, 23, 0) 0%
+  ,rgba(17, 24, 23, 0) 15%,
+  rgba(17, 24, 23, 1) 21%,
+  rgba(17, 24, 23, 1) 80%,
+  rgba(17, 24, 23, 0) 89%,
+  rgba(17, 24, 23, 0) 100%) ;
+}
