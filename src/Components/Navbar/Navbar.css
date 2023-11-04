@@ -53,6 +53,12 @@
         padding-left: 5vw;
     }
     .Navright{
-        flex-direction: column;
+        flex-direction: row;
     }
+    .NavContainer{
+        font-size: 3vw;
+    }
+    #name{
+        scale: 1.25;
+     }
 }

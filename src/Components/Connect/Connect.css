@@ -63,3 +63,51 @@
     transition: 0.5s;
     scale: 1.02;
 }
+@media screen and (max-width: 426px) {
+.Connect{
+    width: 100%;
+    margin-top: 0vh;
+    height: 100vh;
+}
+.connect_header{
+    font-size: 25vw;
+}
+.connect_des{
+    font-size: 4vw;
+    padding: 2vw;
+    flex-direction: column;
+}
+.connect_button{
+    font-size: 4vw;
+    border: 0.4vw solid var(--textColor);
+    padding: 0.6vw 2vw;
+    margin: 01.5vw 0.6vw;
+}
+.connect_button:hover{
+    background-color: var(--textColor);
+    color: black;
+    border: 0.4vw solid var(--textColor);
+    transition: 0.5s;
+    scale: 1.05;
+}
+.image_back hr{
+    width: 80%;
+    height: 0.25vw;
+    background-color: var(--textColor);
+}
+.links{
+    padding: 1vw 0vw 2vw 0vw;
+    margin: 0;
+    gap: 7vw;
+    font-size: 3.5vw;
+}
+.links li{
+    text-transform: uppercase;
+    color: var(--textColor);
+}
+.links li:hover{
+    color: var(--lightAccent);
+    transition: 0.5s;
+    scale: 1.02;
+}
+}
