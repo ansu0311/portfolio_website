@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Intro.css"
 import statue from '../../Assets/simon-lee-hbFKxsIqclc-unsplash.png'
+import statue2 from '../../Assets/Screenshot_2023-11-21_114034-removebg-preview.png'
 
 const Intro = () => {
   return (
@@ -16,7 +17,7 @@ const Intro = () => {
           </div>
         </div>
         <div className='IntroRight'>
-          <img src={statue} alt="3d blender" />
+          <img src={statue2} alt="3d blender" />
         </div>
       </div>
     </div>

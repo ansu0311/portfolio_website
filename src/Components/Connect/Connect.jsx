@@ -19,10 +19,13 @@ const Connect = () => {
         <Link to="https://www.linkedin.com/in/ansumannayak03/">
           <li>Linkedin</li>
         </Link>
+        <Link to="https://dribbble.com/Ansu0311">
+          <li>Dribbble</li>
+        </Link>
         <Link to="https://github.com/ansu0311">
           <li>GitHub</li>
         </Link>
-        <Link to="https://github.com/ansu0311">
+        <Link to="https://drive.google.com/file/d/1nAelXE1CLXMYDqlhg2yks1e0hGm_9kOO/view?usp=sharing">
           <li>Resume</li>
         </Link>
       </ul>

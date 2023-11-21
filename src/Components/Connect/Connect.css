@@ -1,113 +1,118 @@
-
-.Connect{
-    width: 100%;
-    margin-top: 30vh;
-    height: 89vh;
-    display: flex;
-    justify-content: center;
+.Connect {
+  width: 100%;
+  margin-top: 30vh;
+  height: 89vh;
+  display: flex;
+  justify-content: center;
 }
-.ConnectContainer{
-    width: 95vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.ConnectContainer {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--TextVoiletColor);
 }
-.connect_header{
-    line-height: 99%;
-    font-size: 13vw;
-    font-family: 'Urotraman Regular';
-    letter-spacing: -0.0055em;
+.connect_header {
+  line-height: 99%;
+  font-size: 13vw;
+  font-family: "Urotraman Regular";
+  letter-spacing: -0.0055em;
 }
-.connect_des{
-    display: flex;
-    font-size: 1.7vw;
-    align-items: center;
-    flex-direction: row;
-    text-transform: uppercase;
+.connect_des {
+  display: flex;
+  font-size: 1.7vw;
+  align-items: center;
+  flex-direction: row;
+  text-transform: uppercase;
 }
-.connect_button{
-    font-size: 1.2vw;
-    border-radius: 3rem;
-    border: 0.2vw solid var(--textColor);
-    padding: 0.3vw 1.2vw;
-    margin: 0.4vw;
-    text-align: center;
-    margin: 0.2vw 0.6vw;
+.connect_button {
+  font-size: 1.2vw;
+  border-radius: 3rem;
+  border: 0.2vw solid var(--TextVoiletColor);
+  padding: 0.3vw 1.2vw;
+  margin: 0.4vw;
+  text-align: center;
+  margin: 0.2vw 0.6vw;
 }
-.connect_button:hover{
-    background-color: var(--textColor);
-    color: black;
-    border: 0.2vw solid var(--textColor);
-    transition: 0.5s;
-    scale: 1.05;
+.connect_button:hover {
+  background-color: var(--lightAccent);
+  color: var(--TextVoiletColor);
+  border: 0.2vw solid var(--lightAccent);
+  transition: 0.5s;
+  scale: 1.05;
 }
-.image_back hr{
-    width: 80%;
+.image_back hr {
+  width: 80%;
+  border: 0.1vw solid var(--TextVoiletColor);
+  margin: 0 auto;
 }
-.links{
-    display: flex;
-    padding: 1vw 0vw 2vw 0vw;
-    margin: 0;
-    gap: 2vw;
-    justify-content: center;
-    list-style: none;
-    font-size: 1vw;
+.links {
+  z-index: 10;
+  background-color: var(--navBarColor);
+  backdrop-filter: blur(4px);
+  display: flex;
+  padding: 1vw 0vw 2vw 0vw;
+  margin: 0;
+  gap: 2vw;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.2vw;
 }
-.links li{
-    text-transform: uppercase;
-    color: var(--textColor);
+.links li {
+  text-transform: uppercase;
+  color: var(--TextVoiletColor);
+  text-decoration: none;
 }
-.links li:hover{
-    color: var(--lightAccent);
-    transition: 0.5s;
-    scale: 1.02;
+.links li:hover {
+  transition: 0.5s;
+  scale: 1.05;
 }
 @media screen and (max-width: 426px) {
-.Connect{
+  .Connect {
     width: 100%;
     margin-top: 0vh;
     height: 100vh;
-}
-.connect_header{
+  }
+  .connect_header {
     font-size: 25vw;
-}
-.connect_des{
+  }
+  .connect_des {
     font-size: 4vw;
     padding: 2vw;
     flex-direction: column;
-}
-.connect_button{
+  }
+  .connect_button {
     font-size: 4vw;
     border: 0.4vw solid var(--textColor);
     padding: 0.6vw 2vw;
     margin: 01.5vw 0.6vw;
-}
-.connect_button:hover{
+  }
+  .connect_button:hover {
     background-color: var(--textColor);
     color: black;
     border: 0.4vw solid var(--textColor);
     transition: 0.5s;
     scale: 1.05;
-}
-.image_back hr{
+  }
+  .image_back hr {
     width: 80%;
     height: 0.25vw;
     background-color: var(--textColor);
-}
-.links{
+  }
+  .links {
     padding: 1vw 0vw 2vw 0vw;
     margin: 0;
     gap: 7vw;
     font-size: 3.5vw;
-}
-.links li{
+  }
+  .links li {
     text-transform: uppercase;
     color: var(--textColor);
-}
-.links li:hover{
+  }
+  .links li:hover {
     color: var(--lightAccent);
     transition: 0.5s;
     scale: 1.02;
-}
+  }
 }
