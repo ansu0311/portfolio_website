@@ -1,64 +1,65 @@
 @font-face {
-    font-family: 'AMORIA Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('AMORIA Regular'), url('../../Assets/font/AMORIA-BF64a2f6809ce9e.woff') format('woff');
-    }
-.Navbar{
-    z-index: 10;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-color: var(--navBarColor);
-    backdrop-filter: blur(4px);
-    position: fixed;
+  font-family: "AMORIA Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AMORIA Regular"),
+    url("../../Assets/font/AMORIA-BF64a2f6809ce9e.woff") format("woff");
 }
-.NavContainer{
-    width: 95vw;
-    display: flex;
-    align-items: center;
-    font-size: 1.1vw;
-    justify-content: space-between;
-    padding: 0.4vw;
-    border-bottom: 1px solid var(--textColor);
-    top: 0px;
-    left: 0px;
-    margin-left: 2vw;
+.Navbar {
+  z-index: 10;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--navBarColor);
+  backdrop-filter: blur(4px);
+  position: fixed;
 }
-.Navleft{
-    display:flex;
-    width: 100%;
+.NavContainer {
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  font-size: 1.1vw;
+  justify-content: space-between;
+  padding: 0.4vw;
+  border-bottom: 1px solid var(--textColor);
+  top: 0px;
+  left: 0px;
+  margin-left: 2vw;
 }
-#name{
-    font-family: 'AMORIA Regular';
-    color: var(--lightAccent);
-    scale: 1.45;
-    padding-left: 1vw;
-    transition: all 0.5s;
-    cursor: pointer;
+.Navleft {
+  display: flex;
+  width: 100%;
 }
-.Navright{
-    display:flex;
-    list-style: none;
+#name {
+  font-family: "AMORIA Regular";
+  color: var(--lightAccent);
+  scale: 1.45;
+  padding-left: 1vw;
+  transition: all 0.5s;
+  cursor: pointer;
 }
-.Navright li{
-    padding-right: 1vw;
+.Navright {
+  display: flex;
+  list-style: none;
 }
-.Navright>li:hover{
-    color: var(--lightAccent);
-    cursor: pointer;
+.Navright li {
+  padding-right: 1vw;
 }
-@media screen and (max-width:426px) {
-    .Navleft p{
-        padding-left: 5vw;
-    }
-    .Navright{
-        flex-direction: row;
-    }
-    .NavContainer{
-        font-size: 3vw;
-    }
-    #name{
-        scale: 1.25;
-     }
+.Navright > li:hover {
+  color: var(--lightAccent);
+  cursor: pointer;
+}
+@media screen and (max-width: 426px) {
+  .Navleft p {
+    padding-left: 5vw;
+  }
+  .Navright {
+    flex-direction: row;
+  }
+  .NavContainer {
+    font-size: 3vw;
+  }
+  #name {
+    scale: 1.25;
+  }
 }

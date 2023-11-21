@@ -23,31 +23,21 @@ const Project = () => {
         <div className='ProjectSlab'>
         <div className='ProjectLeft'>
           <div className='project_header'>
-            Ecommerce Website
+            Cookies Website
           </div>
           <div className='project_work'>
-            development
+            design & development
           </div>
         </div>
-        <div className='ProjectRight'><Link to="https://ornate-custard-db69db.netlify.app/">
-          <div className='pic_container'><img src={pure_css} alt="Project thumbnail" /></div>
+        <div className='ProjectRight'><Link to="https://cookie-site-omega.vercel.app/">
+          <div className='pic_container'><img src={Cookkie} alt="Project thumbnail" /></div>
         </Link></div>
         </div>
         <div className='ProjectSlab_R'>
-        <div className='ProjectLeft_R'><Link to="https://movierecommendationwebsite.streamlit.app/">
-        <div className='pic_container'><img src={Movie} alt="Project thumbnail" /></div>
+        <div className='ProjectLeft_R'><Link to="https://e-com-website-eight.vercel.app/">
+        <div className='pic_container'><img src={Ecom} alt="Project thumbnail" /></div>
           </Link></div>
         <div className='ProjectRight_R'>
-          <div className='project_header'>
-            Movie Suggetion App
-          </div>
-          <div className='project_work'>
-            Development
-          </div>
-        </div>
-        </div>
-        <div className='ProjectSlab'>
-        <div className='ProjectLeft'>
           <div className='project_header'>
             Apperal Website
           </div>
@@ -55,20 +45,30 @@ const Project = () => {
             Design & Development
           </div>
         </div>
-        <div className='ProjectRight'><Link to="https://e-com-website-eight.vercel.app/">
-        <div className='pic_container'><img src={Ecom} alt="Project thumbnail" /></div>
+        </div>
+        <div className='ProjectSlab'>
+        <div className='ProjectLeft'>
+          <div className='project_header'>
+            Movie Suggetion App
+          </div>
+          <div className='project_work'>
+            Development
+          </div>
+        </div>
+        <div className='ProjectRight'><Link to="https://movierecommendationwebsite.streamlit.app/">
+        <div className='pic_container'><img src={Movie} alt="Project thumbnail" /></div>
         </Link></div>
         </div>
         <div className='ProjectSlab_R'>
-        <div className='ProjectLeft_R'><Link to="https://cookie-site-omega.vercel.app/">
-        <div className='pic_container'><img src={Cookkie} alt="Project thumbnail" /></div>
+        <div className='ProjectLeft_R'><Link to="https://ornate-custard-db69db.netlify.app/">
+        <div className='pic_container'><img src={pure_css} alt="Project thumbnail" /></div>
         </Link></div>
         <div className='ProjectRight_R'>
           <div className='project_header'>
-            Cookies Website
+            Ecommerce Website
           </div>
           <div className='project_work'>
-            design & development
+            development
           </div>
         </div>
         </div>

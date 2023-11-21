@@ -62,7 +62,8 @@
 }
 .IntroRight img {
   width: auto;
-  height: 40vw;
+  margin-top: 7vw;
+  height: 30vw;
 }
 @media screen and (max-width: 426px) {
   .Intro {
