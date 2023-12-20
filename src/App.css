@@ -6,11 +6,11 @@
     url("../src/Assets/font/NexaBold.ttf.woff") format("woff");
 }
 @font-face {
-  font-family: "Urotraman Regular";
+  font-family: "Humane Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("urotraman-regular"),
-    url("../src/Assets/font/urotraman-regular.otf") format("woff");
+  src: local("Humane-Regular"),
+    url("../src/Assets/font/Humane-Regular.woff") format("woff");
 }
 :root {
   --navBarColor: #ffffff2c;
@@ -18,7 +18,8 @@
   --textColor: #ffffff;
   --lightAccent: #ceabfc;
   --darkAccent: #7a4ebd;
-  --TextVoiletColor: #0d0818;
+  --TextVoiletColor_dark: #0d0818;
+  --TextVoiletColor: #fff0e7;
 }
 .App {
   text-align: center;
@@ -26,8 +27,8 @@
   background-color: var(--appColor);
   font-family: "Nexa Bold";
   background-size: cover;
-  background-position: top;
-  background-image: url("../src/Assets/Firefly\ 20231109220832.png");
+  background-position: bottom;
+  background-image: url("../src/Assets/Edited_Artwork.gif");
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -36,9 +37,9 @@
     180deg,
     rgba(17, 14, 22, 0) 0%,
     rgba(17, 14, 22, 0) 15%,
-    rgba(17, 14, 22, 1) 25%,
-    rgba(17, 14, 22, 1) 72.5%,
-    rgba(17, 14, 22, 0) 82%,
+    rgba(17, 14, 22, 1) 22%,
+    rgba(17, 14, 22, 1) 76%,
+    rgba(17, 14, 22, 0) 84%,
     rgba(17, 14, 22, 0) 100%
   );
 }

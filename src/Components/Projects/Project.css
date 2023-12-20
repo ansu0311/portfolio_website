@@ -11,14 +11,14 @@
   justify-content: center;
 }
 .ProjectContainer {
-  width: 65vw;
+  width: 85vw;
   margin-top: 10vh;
 }
 .ProjectContainer p {
-  font-family: "AMORIA Regular";
+  font-family: "Nexa Bold";
   text-align: left;
-  font-size: 4vw;
-  margin: 0vw 0vw 1vw 1vw;
+  font-size: 4.5vw;
+  margin: 0vw 0vw 0vw 1vw;
 }
 .ProjectSlab {
   padding: 1vw;
@@ -40,10 +40,10 @@
   font-size: 1.5vw;
 }
 .project_header {
-  font-family: "Urotraman Regular";
-  letter-spacing: -0.01em;
-  line-height: 95%;
-  font-size: 4.5vw;
+  font-family: "Humane Regular";
+  text-transform: uppercase;
+  line-height: 65%;
+  font-size: 6.5vw;
 }
 .project_work {
   text-transform: uppercase;
@@ -56,31 +56,45 @@
   justify-content: flex-end;
 }
 .pic_container {
-  width: 28vw;
-  height: 12.9vw;
-  overflow: hidden;
+  width: 40vw;
+  height: 18.5vw;
   filter: drop-shadow(0.4vw 0.4vw 10px black);
-  border-radius: 1rem;
   background-color: var(--darkAccent);
 }
-.pic_container img {
+.right::after {
+  content: "";
+  width: 100%;
   height: 100%;
+  background-color: transparent;
+  border: 2px solid var(--lightAccent);
+  position: absolute;
+  top: 1.5rem;
+  left: -1.5rem;
+  z-index: -1;
+}
+.left::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid var(--lightAccent);
+  position: absolute;
+  top: 1.5rem;
+  right: -1.5rem;
+  z-index: -1;
+}
+.pic_container>img{
+  width: 100%;
+  object-fit: cover;
   cursor: pointer;
   transition: all 0.5s ease;
-  filter: grayscale();
-  opacity: 0.7;
+  filter: drop-shadow(0vw 0vw 0px black) grayscale(1);
 }
 .pic_container:hover img {
-  transform: scale(1.1);
-  filter: none;
-  opacity: 1;
+  transform: scale(1.07);
+  filter: drop-shadow(-0.2vw -0.2vw 10px black) grayscale(0);
 }
-/* .ProjectLeft_R{
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-}
-.ProjectLeft_R img{
+/* .ProjectLeft_R img{
     width: 100%;
     transition: all 0.5s;
     filter: grayscale();
@@ -116,8 +130,8 @@
 .logo_holder {
   display: flex;
   background-color: var(--appColor);
-  width: 65vw;
-  margin-top: 4vw;
+  width: 85vw;
+  margin-top: 7vw;
   height: 4vw;
   align-items: center;
   border-radius: 3rem;

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Intro.css"
-import statue from '../../Assets/simon-lee-hbFKxsIqclc-unsplash.png'
+import statue from '../../Assets/pink-helment-12.png'
 import statue2 from '../../Assets/Screenshot_2023-11-21_114034-removebg-preview.png'
 
 const Intro = () => {
@@ -16,8 +16,11 @@ const Intro = () => {
           As a front-end developer and UI/UX designer, minimalist designs are my forte. I excel in responsive design, accessibility, and motion design, and have a keen interest in the psychology of user experience. In my free time, I enjoy cooking, watching anime, and indulging in art. 
           </div>
         </div>
-        <div className='IntroRight'>
+        {/* <div className='IntroRight'>
           <img src={statue2} alt="3d blender" />
+        </div> */}
+        <div className='IntroRight1'>
+          <img src={statue} alt="3d blender" />
         </div>
       </div>
     </div>

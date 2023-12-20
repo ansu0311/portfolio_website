@@ -38,21 +38,22 @@
 }
 .intro_left_header {
   text-align: right;
-  margin: 3vw 0vw;
+  margin: 3vw 0vw 1.5vw 0vw;
 }
 .left_header1 {
-  font-size: 4.5vw;
-  font-family: "Urotraman Regular";
-  letter-spacing: -0.025em;
-  line-height: 90%;
+  font-size: 6.65vw;
+  font-family: "Humane Regular";
+  text-transform: uppercase;
+  letter-spacing: 0.0058em;
+  line-height: 60%;
 }
 .left_header2 {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   font-family: "AMORIA Regular";
   color: var(--lightAccent);
 }
 .intro_left_discription {
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   text-align: justify;
 }
 .IntroRight {
@@ -64,6 +65,16 @@
   width: auto;
   margin-top: 7vw;
   height: 30vw;
+}
+.IntroRight1 {
+  width: 59%;
+  display: flex;
+  justify-content: center;
+}
+.IntroRight1 img {
+  width: auto;
+  margin-top: 7vw;
+  height: 25vw;
 }
 @media screen and (max-width: 426px) {
   .Intro {

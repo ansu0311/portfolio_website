@@ -30,12 +30,12 @@ const Project = () => {
           </div>
         </div>
         <div className='ProjectRight'><Link to="https://cookie-site-omega.vercel.app/">
-          <div className='pic_container'><img src={Cookkie} alt="Project thumbnail" /></div>
+          <div className='pic_container left'><img src={Cookkie} alt="Project thumbnail" /></div>
         </Link></div>
         </div>
         <div className='ProjectSlab_R'>
         <div className='ProjectLeft_R'><Link to="https://e-com-website-eight.vercel.app/">
-        <div className='pic_container'><img src={Ecom} alt="Project thumbnail" /></div>
+        <div className='pic_container right'><img src={Ecom} alt="Project thumbnail" /></div>
           </Link></div>
         <div className='ProjectRight_R'>
           <div className='project_header'>
@@ -56,12 +56,12 @@ const Project = () => {
           </div>
         </div>
         <div className='ProjectRight'><Link to="https://movierecommendationwebsite.streamlit.app/">
-        <div className='pic_container'><img src={Movie} alt="Project thumbnail" /></div>
+        <div className='pic_container left'><img src={Movie} alt="Project thumbnail" /></div>
         </Link></div>
         </div>
         <div className='ProjectSlab_R'>
         <div className='ProjectLeft_R'><Link to="https://ornate-custard-db69db.netlify.app/">
-        <div className='pic_container'><img src={pure_css} alt="Project thumbnail" /></div>
+        <div className='pic_container right'><img src={pure_css} alt="Project thumbnail" /></div>
         </Link></div>
         <div className='ProjectRight_R'>
           <div className='project_header'>

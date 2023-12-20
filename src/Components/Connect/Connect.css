@@ -1,7 +1,12 @@
+.image_back{
+  margin-top: 12vh;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .Connect {
   width: 100%;
-  margin-top: 30vh;
-  height: 89vh;
   display: flex;
   justify-content: center;
 }
@@ -9,19 +14,21 @@
   width: 95vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: var(--TextVoiletColor);
 }
 .connect_header {
-  line-height: 99%;
-  font-size: 13vw;
-  font-family: "Urotraman Regular";
+  line-height: 65%;
+  margin-top: 2vw;
+  font-size: 16vw;
+  font-family: "Humane Regular";
+  text-transform: uppercase;
   letter-spacing: -0.0055em;
 }
 .connect_des {
   display: flex;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   align-items: center;
   flex-direction: row;
   text-transform: uppercase;
@@ -33,12 +40,13 @@
   padding: 0.3vw 1.2vw;
   margin: 0.4vw;
   text-align: center;
+  transition: 0.5s;
   margin: 0.2vw 0.6vw;
 }
 .connect_button:hover {
-  background-color: var(--lightAccent);
-  color: var(--TextVoiletColor);
-  border: 0.2vw solid var(--lightAccent);
+  background-color: var(--TextVoiletColor);
+  color: var(--TextVoiletColor_dark);
+  border: 0.2vw solid var(--TextVoiletColor);
   transition: 0.5s;
   scale: 1.05;
 }
@@ -47,26 +55,38 @@
   border: 0.1vw solid var(--TextVoiletColor);
   margin: 0 auto;
 }
-.links {
-  z-index: 10;
-  background-color: var(--navBarColor);
-  backdrop-filter: blur(4px);
-  display: flex;
-  padding: 1vw 0vw 2vw 0vw;
-  margin: 0;
-  gap: 2vw;
-  justify-content: center;
-  list-style: none;
-  font-size: 1.2vw;
+.right_links{
+display: flex;
+justify-content: flex-end;
+}
+.links{
+  margin-right: 1.5rem;
 }
 .links li {
   text-transform: uppercase;
   color: var(--TextVoiletColor);
-  text-decoration: none;
+  border: 0.2rem solid var(--TextVoiletColor);
+  padding: 0.5rem 1.2rem;
+  border-radius: 3rem;
+  margin: 0.5rem 0.6rem;
+  list-style: none;
+  transition: 0.5s;
+  font-size: 1.4vw;
 }
 .links li:hover {
+  background-color: var(--TextVoiletColor);
+  color: var(--TextVoiletColor_dark);
+  border: 0.2vw solid var(--TextVoiletColor);
   transition: 0.5s;
   scale: 1.05;
+}
+.linkFirstRow{
+  display: flex;
+  margin-right: 5rem;
+}
+.linkSecondRow{
+  margin-left: 5rem;
+  display: flex;
 }
 @media screen and (max-width: 426px) {
   .Connect {

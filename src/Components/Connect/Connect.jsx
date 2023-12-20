@@ -14,21 +14,27 @@ const Connect = () => {
             </div>
         </div>
       </div>
-      <hr />
+      {/*<hr />*/}
+      <div className="right_links">
       <ul className="links">
-        <Link to="https://www.linkedin.com/in/ansumannayak03/">
+      <div className="linkFirstRow">
+        <Link style={{textDecoration:"none"}} to="https://www.linkedin.com/in/ansumannayak03/">
           <li>Linkedin</li>
         </Link>
-        <Link to="https://dribbble.com/Ansu0311">
-          <li>Dribbble</li>
-        </Link>
-        <Link to="https://github.com/ansu0311">
-          <li>GitHub</li>
-        </Link>
-        <Link to="https://drive.google.com/file/d/1nAelXE1CLXMYDqlhg2yks1e0hGm_9kOO/view?usp=sharing">
+        <Link style={{textDecoration:"none"}} to="https://drive.google.com/file/d/1nAelXE1CLXMYDqlhg2yks1e0hGm_9kOO/view?usp=sharing">
           <li>Resume</li>
         </Link>
+        </div>
+        <div className="linkSecondRow">
+        <Link style={{textDecoration:"none"}} to="https://github.com/ansu0311">
+          <li>GitHub</li>
+        </Link>
+        <Link style={{textDecoration:"none"}} to="https://dribbble.com/Ansu0311">
+          <li>Dribbble</li>
+        </Link>
+        </div>
       </ul>
+      </div>
     </div>
   );
 };
