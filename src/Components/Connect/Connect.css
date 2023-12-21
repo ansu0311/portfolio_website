@@ -60,53 +60,54 @@ display: flex;
 justify-content: flex-end;
 }
 .links{
-  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: row;
 }
-.links li {
+#trigger_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   color: var(--TextVoiletColor);
-  border: 0.2rem solid var(--TextVoiletColor);
-  padding: 0.5rem 1.2rem;
+  font-size: 1.6vw;
+  padding: 0vw 1vw;
   border-radius: 3rem;
-  margin: 0.5rem 0.6rem;
+  transition: 0.5s;
+  border: 0.2vw solid var(--textColor);
+}
+.trigger{
+  height: 3vw;
+  min-width: 3vw;
+  margin: 0vw 0.8vw;
   list-style: none;
   transition: 0.5s;
-  font-size: 1.4vw;
 }
-.links li:hover {
-  background-color: var(--TextVoiletColor);
-  color: var(--TextVoiletColor_dark);
-  border: 0.2vw solid var(--TextVoiletColor);
-  transition: 0.5s;
-  scale: 1.05;
-}
-.linkFirstRow{
-  display: flex;
-  margin-right: 5rem;
-}
-.linkSecondRow{
-  margin-left: 5rem;
-  display: flex;
+.trigger:hover {
+  border: none;
+  transition: 0.3s;
+  scale: 1.15;
 }
 @media screen and (max-width: 426px) {
   .Connect {
-    width: 100%;
     margin-top: 0vh;
-    height: 100vh;
+  }
+  .ConnectContainer {
+    justify-content: flex-start;
+    align-items: center;
   }
   .connect_header {
-    font-size: 25vw;
+    font-size: 36vw;
   }
   .connect_des {
-    font-size: 4vw;
-    padding: 2vw;
-    flex-direction: column;
+    font-size: 3.5vw;
+    padding: 0vw;
+    flex-direction: row;
   }
   .connect_button {
-    font-size: 4vw;
+    font-size: 3.5vw;
     border: 0.4vw solid var(--textColor);
     padding: 0.6vw 2vw;
-    margin: 01.5vw 0.6vw;
+    margin: 0vw 0.6vw;
   }
   .connect_button:hover {
     background-color: var(--textColor);
@@ -115,24 +116,22 @@ justify-content: flex-end;
     transition: 0.5s;
     scale: 1.05;
   }
-  .image_back hr {
-    width: 80%;
-    height: 0.25vw;
-    background-color: var(--textColor);
-  }
   .links {
+    width: 100%;
     padding: 1vw 0vw 2vw 0vw;
-    margin: 0;
+    margin: 0vw;
     gap: 7vw;
-    font-size: 3.5vw;
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
   }
-  .links li {
-    text-transform: uppercase;
-    color: var(--textColor);
-  }
-  .links li:hover {
-    color: var(--lightAccent);
-    transition: 0.5s;
-    scale: 1.02;
+  #trigger_text{
+    font-size: 4vw;
+    padding: 0vw 4vw;
+   }
+  .trigger{
+    height: 6vw;
+    min-width: 6vw;
+    margin: 0vw 0.4vw;
   }
 }

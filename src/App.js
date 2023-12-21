@@ -6,6 +6,7 @@ import Intro from "../src/Components/Intro/Intro";
 import Project from "../src/Components/Projects/Project";
 import Connect from "../src/Components/Connect/Connect";
 import { BrowserRouter } from "react-router-dom";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Connect />
         </div>
       </BrowserRouter>
+      <SpeedInsights />
     </div>
   );
 }
