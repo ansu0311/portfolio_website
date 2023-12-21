@@ -75,7 +75,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <hr />
+      <hr className="invisble"/>
     </div>
   );
 };

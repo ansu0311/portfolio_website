@@ -106,13 +106,14 @@
   .intro_left_discription {
     font-size: 4vw;
   }
-  .IntroRight {
+  .IntroRight1 {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .IntroRight img {
-    width: auto;
-    height: 95vw;
+  .IntroRight1 img {
+    width: 80vw;
+    height: auto;
+    padding-bottom: 5vw;
   }
 }

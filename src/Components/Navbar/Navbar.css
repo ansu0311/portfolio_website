@@ -18,7 +18,7 @@
   width: 95vw;
   display: flex;
   align-items: center;
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   justify-content: space-between;
   padding: 0.4vw;
   border-bottom: 1px solid var(--textColor);
@@ -33,7 +33,7 @@
 #name {
   font-family: "Nexa Bold";
   color: var(--TextVoiletColor);
-  scale: 1.45;
+  scale: 1.2;
   padding-left: 1vw;
   transition: all 0.5s;
   cursor: pointer;
@@ -51,15 +51,22 @@
   scale: 1.2;
   cursor: pointer;
 }
+.invisble{
+  border: none;
+}
+
 @media screen and (max-width: 426px) {
   .Navleft p {
-    padding-left: 5vw;
+    margin-left: 2.5vw;
   }
   .Navright {
     flex-direction: row;
   }
+  .Navright li{
+    margin-left:1vw ;
+  }
   .NavContainer {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   #name {
     scale: 1.25;

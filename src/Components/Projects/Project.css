@@ -127,15 +127,22 @@
   font-size: 1.1vw;
   color: var(--lightAccent);
 }
-.logo_holder {
+.logo_line {
   display: flex;
   background-color: var(--appColor);
   width: 85vw;
-  margin-top: 7vw;
   height: 4vw;
   align-items: center;
   border-radius: 3rem;
   justify-content: space-around;
+}
+.logo_holder{
+  display: flex;
+  background-color: var(--appColor);
+  margin-top: 7vw;
+  height: 4vw;
+  border-radius: 3rem;
+  flex-direction: row;
 }
 .logo_size {
   height: 2vw;
@@ -151,89 +158,124 @@
 }
 @media screen and (max-width: 426px) {
   .Project {
-    z-index: 1;
-    display: flex;
-    justify-content: center;
     height: 100vh;
   }
   .ProjectContainer {
-  margin-top: 0vh;
-  display: flex;
-  flex-direction: column;
-    align-items: center;
-    width: 65vw;
+    margin-top: 8vh;
   }
   .ProjectContainer p {
+    text-align: center;
     font-size: 7vw;
-    margin: 0vw 0vw 3vw 2vw;
+    margin: 0vw 0vw 2vw 0vw;
   }
   .ProjectSlab {
-    padding: 2vw;
+    padding: 5vw 0vw;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ProjectSlab_R {
+    padding: 5vw 0vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .ProjectLeft {
-    text-align: center;
+    width: 40%;
+    padding-right: 1.5vw;
   }
   .project_header {
-    line-height: 97%;
-    font-size: 5.5vw;
-    padding-top: 2.5vw;
+    line-height: 65%;
+    font-size: 10vw;
   }
   .project_work {
-    text-transform: uppercase;
-    font-size: 1.7vw;
-    padding-top: 1vw;
-    color: var(--lightAccent);
+    font-size: 2vw;
   }
   .ProjectRight {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    width: 60%;
+    padding-right: 1.5vw;
   }
   .pic_container {
-    width: 54vw;
-    height: 27vw;
-    object-fit: contain;
-    overflow: hidden;
+    width: 50vw;
+    height: 23.125vw;
     filter: drop-shadow(0.4vw 0.4vw 10px black);
-    border-radius: 1rem;
+    background-color: var(--darkAccent);
   }
-  .pic_container img {
-    object-position: center;
-    height: 100%;
+  .right::after {
+    top: 1rem;
+    left: -1rem;
+    z-index: -1;
+  }
+  .left::after {
+    top: 1rem;
+    right: -1rem;
+    z-index: -1;
+  }
+  .pic_container>img{
+    width: 100%;
+    object-fit: cover;
     cursor: pointer;
+    transition: all 0.5s ease;
+    filter: drop-shadow(0vw 0vw 0px black) grayscale(1);
+  }
+  .pic_container:hover img {
+    transform: scale(1.07);
+    filter: drop-shadow(-0.2vw -0.2vw 10px black) grayscale(0);
+  }
+  /* .ProjectLeft_R img{
+      width: 100%;
+      transition: all 0.5s;
+      filter: grayscale();
+      opacity: 0.7;
+  }
+  .ProjectLeft_R:hover img{
+      transition: all 0.5s;
+      filter: none;
+      opacity: 1;
+  }
+  .ProjectLeft_R:hover{
+      filter: drop-shadow(0.0vw 0.0vw 15px var(--lightAccent));
+      transition: all 0.5s;
+  } */
+  .ProjectRight_R {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5vw;
+  }
+  .project_header_R {
+    font-family: "Urotraman Regular";
+    letter-spacing: -0.01em;
+    line-height: 95%;
+    font-size: 4.5vw;
+  }
+  .project_work_R {
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    color: var(--lightAccent);
+  }
+  .logo_line {
+    margin-top: 3vw;
+    height: 10vw;
+    padding: 2vw 0vw;
+  }
+  .logo_holder{
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 7vw;
+    height: 4vw;
+  }
+  .logo_size {
+    height: 6vw;
     transition: all 0.5s ease;
     filter: grayscale();
     opacity: 0.7;
   }
-  .pic_container:hover img {
-    transform: scale(1.1);
+  .logo_size:hover {
+    scale: 1.2;
+    transition: all 0.5s ease;
     filter: none;
     opacity: 1;
-  }
-  .ProjectSlab_R{
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .ProjectLeft_R {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-  .ProjectRight_R {
-    text-align: center;
-  }
-  .logo_holder {
-    width: 90vw;
-    margin-top: 8vw;
-    height: inherit;
-    padding: 2vw 2vw;
-  }
-  .logo_size {
-    height: 6vw;
   }
 }
