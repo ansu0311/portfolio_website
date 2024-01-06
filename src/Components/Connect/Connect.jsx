@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 import SocialLinks from "../../Data/SocialLinks";
 
 const Connect = () => {
+  
+  const composeEmail = () => {
+    const email = 'ansuman.nayak03@gmail.com';
+    const subject = 'Inquiry';
+    const body = 'Dear Ansuman, \n\n';
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="image_back" id="connect">
       <div className="Connect">
@@ -11,7 +20,7 @@ const Connect = () => {
           <div className="connect_header">Let's connect</div>
           <div className="connect_des">
             <div>A project on your mind?</div>
-            <div className="trigger_text connect_button">contact me</div>
+            <button onClick={composeEmail} className="trigger_text connect_button">contact me</button>
           </div>
         </div>
       </div>
@@ -25,7 +34,7 @@ const Connect = () => {
             Resume
           </Link>
           {SocialLinks.map((social, index) => (
-            <Link style={{ textDecoration: "none" }} to={`${social.links}`}>
+            <Link key={index} style={{ textDecoration: "none" }} to={`${social.links}`}>
               <img
                 className="trigger"
                 src={`${social.logo}`}

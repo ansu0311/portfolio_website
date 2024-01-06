@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Project.css";
-import { Link } from "react-router-dom";
 import Data from "../../Data/Project";
 import Typewriter from "../DisplayText";
+import { Button } from "react-scroll";
 
 const Project = () => {
   let items = Data;
   const [active, setActive] = useState(0);
-  let designBoolen = items[active].design?.length;
   let Heading_text = items[active].name;
   let Description_text = items[active].body;
 
@@ -102,36 +101,25 @@ const Project = () => {
           }
         })}
             <div className="buttom_holder">
-              <button id="prev" onClick={() => slidePrev()}>
+              <Button id="prev" onClick={() => slidePrev()}>
                 &lt;
-              </button>
-              <button id="next" onClick={() => slideNext()}>
+              </Button>
+              <Button id="next" onClick={() => slideNext()}>
                 &gt;
-              </button>
+              </Button>
             </div>
           </div>
           <div className="text_box">
             <div id="project_header">
-              <Typewriter text={Heading_text} speed={50} />
+              {/* <Typewriter text={Heading_text} speed={40} /> */}
+              {Heading_text}
             </div>
             <div className={`slide-fade-text ${show ? "active" : ""}`}>
               {Description_text}
             </div>
             <div className="button_box">
-              <Link
-              style={{textDecoration:"none"}}
-                to={items[active].links}
-                className="button_butt"
-              >
-                website
-              </Link>
-              <Link
-              style={{textDecoration:"none"}}
-                to={items[active].design}
-                className={`button_butt ${designBoolen ? "" : "hide"}`}
-              >
-                dribbble
-              </Link>
+              <a href={items[active].links} className="button_butt" style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer">website</a>
+              <a href={items[active].design} className={items[active].design?"button_butt":"hide"} style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer">Design</a>
             </div>
           </div>
         </div>

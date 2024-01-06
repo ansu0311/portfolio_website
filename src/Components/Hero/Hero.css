@@ -86,10 +86,14 @@
   justify-content: right;
 }
 .hero_button {
-  border: 0.2vw solid var(--textColor);
+  border: 0.2vw solid var(--appColor);
   border-radius: 3rem;
   padding: 0.5vw 1.2vw;
   font-size: 1.5rem;
+  font-family: "Nexa Bold";
+  background-color: var(--appColor);
+  color: var(--backgroundColor);
+  transition: 0.3s;
   text-transform: uppercase;
 }
 .hero_button:hover {

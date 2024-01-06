@@ -29,7 +29,7 @@ const Projects = [
   },
   {
     id: 2,
-    name: "Movie Suggetion App",
+    name: "Movie Recommender",
     links: "https://movierecommendationwebsite.streamlit.app/",
     image: Movie,
     image_phone:Movie_phone,

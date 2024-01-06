@@ -12,6 +12,14 @@ const Hero = () => {
     return month;
   };
 
+    const composeEmail = () => {
+      const email = 'ansuman.nayak03@gmail.com';
+      const subject = 'Inquiry';
+      const body = 'Dear Ansuman, \n\n';
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    };
+
   return (
     <div className="Hero" id="home">
       <div className="HeroContainer">
@@ -34,7 +42,7 @@ const Hero = () => {
               design that grabs attention. I love nature, anime, food and art
             </div>
             <div className="button_cont">
-              <div className="hero_button">Contact me</div>
+              <button  onClick={composeEmail} className="hero_button">Contact me</button>
             </div>
           </div>
         </div>
