@@ -1,88 +1,138 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Project.css";
-import pure_css from "../../Assets/Projects/pure_css.png";
-import Movie from "../../Assets/Projects/Movie.png";
-import Ecom from "../../Assets/Projects/Ecom.png";
-import Cookkie from "../../Assets/Projects/Cookkie.png";
-import HTML_logo from "../../Assets/Skills/HTML_logo.png";
-import CSS_logo from "../../Assets/Skills/CSS_logo.png";
-import JavaScript_logo from "../../Assets/Skills/JavaScript_logo.png";
-import Booystrap_logo from "../../Assets/Skills/Booystrap_logo.png";
-import React_logo from "../../Assets/Skills/React_logo.png";
-import Figma_logo from "../../Assets/Skills/Figma_logo.png";
-import SQL_logo from "../../Assets/Skills/SQL_logo.png";
-import Python_logo from "../../Assets/Skills/Python_logo.png";
 import { Link } from "react-router-dom";
+import Data from "../../Data/Project";
+import Typewriter from "../DisplayText";
 
 const Project = () => {
+  let items = Data;
+  const [active, setActive] = useState(0);
+  let designBoolen = items[active].design?.length;
+  let Heading_text = items[active].name;
+  let Description_text = items[active].body;
+
+  function slideNext() {
+    if (active < items.length - 1) {
+      setActive(active + 1);
+    }
+  }
+  function slidePrev() {
+    if (active > 0) {
+      setActive(active - 1);
+    }
+  }
+
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    // Trigger animation when 'active' changes
+    setShow(true);
+    // Reset animation after a delay (adjust as needed)
+    const timeout = setTimeout(() => {
+      setShow(false);
+    }, 500); // 2000 milliseconds (2 seconds) delay, adjust as needed
+
+    return () => clearTimeout(timeout); // Cleanup on component unmount
+  }, [active]);
+
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newWindowWidth = window.innerWidth;
+      setIsSmallScreen(newWindowWidth < 650);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="Project" id="work">
       <div className="ProjectContainer">
         <p>Projects</p>
-        <div className="ProjectSlab">
-          <div className="ProjectLeft">
-            <div className="project_header">Cookies Website</div>
-            <div className="project_work">design & development</div>
+        <div className="body1">
+          <div className="slider">
+            {items.map((slide, index) => {
+          if (slide.id === active) {
+            return (
+              <img
+                key={index}
+                className="item"
+                style={{ opacity: "1", zIndex: `${items.length}` }}
+                src={isSmallScreen ?slide.image_phone:slide.image}
+              />
+            );
+          } else if (slide.id > active) {
+            var stt = slide.id - active;
+            return (
+              <img
+                key={index}
+                className="item"
+                style={{
+                  transform: `translate(${6 * stt}vw, 0px) scale(${
+                    1 - 0.15 * stt
+                  }) perspective(30px) rotateY(-1deg)`,
+                  zIndex: `${items.length - stt}`,
+                  filter: `blur(${5*(0.7*stt)}px)`,
+                  opacity: `${stt > 4 ? 0 : 0.2 * (4 - (stt))}`,
+                }}
+                src={isSmallScreen ?slide.image_phone:slide.image}
+              />
+            );
+          } else {
+            var stt = -(slide.id - active);
+            return (
+              <img
+                key={index}
+                className="item"
+                style={{
+                  transform: `translate(${-6 * stt}vw, 0px) scale(${
+                    1 - 0.15 * stt
+                  }) perspective(30px) rotateY(1deg)`,
+                  zIndex: `${items.length - stt}`,
+                  filter: `blur(${5*(0.7*stt)}px)`,
+                  opacity: `${stt > 4 ? 0 :  0.2 * (4 - stt)}`,
+                }}
+                src={isSmallScreen ?slide.image_phone:slide.image}
+              />
+            );
+          }
+        })}
+            <div className="buttom_holder">
+              <button id="prev" onClick={() => slidePrev()}>
+                &lt;
+              </button>
+              <button id="next" onClick={() => slideNext()}>
+                &gt;
+              </button>
+            </div>
           </div>
-          <div className="ProjectRight">
-            <Link to="https://cookie-site-omega.vercel.app/">
-              <div className="pic_container left">
-                <img src={Cookkie} alt="Project thumbnail" />
-              </div>
-            </Link>
-          </div>
-        </div>
-        <div className="ProjectSlab_R">
-          <div className="ProjectLeft_R">
-            <Link to="https://e-com-website-eight.vercel.app/">
-              <div className="pic_container right">
-                <img src={Ecom} alt="Project thumbnail" />
-              </div>
-            </Link>
-          </div>
-          <div className="ProjectRight_R">
-            <div className="project_header">Apperal Website</div>
-            <div className="project_work">Design & Development</div>
-          </div>
-        </div>
-        <div className="ProjectSlab">
-          <div className="ProjectLeft">
-            <div className="project_header">Movie Suggetion App</div>
-            <div className="project_work">Development</div>
-          </div>
-          <div className="ProjectRight">
-            <Link to="https://movierecommendationwebsite.streamlit.app/">
-              <div className="pic_container left">
-                <img src={Movie} alt="Project thumbnail" />
-              </div>
-            </Link>
-          </div>
-        </div>
-        <div className="ProjectSlab_R">
-          <div className="ProjectLeft_R">
-            <Link to="https://ornate-custard-db69db.netlify.app/">
-              <div className="pic_container right">
-                <img src={pure_css} alt="Project thumbnail" />
-              </div>
-            </Link>
-          </div>
-          <div className="ProjectRight_R">
-            <div className="project_header">Ecommerce Website</div>
-            <div className="project_work">development</div>
-          </div>
-        </div>
-        <div className="logo_holder">
-          <div className="logo_line">
-            <img className="logo_size" src={HTML_logo} alt="HTML" />
-            <img className="logo_size" src={CSS_logo} alt="CSS" />
-            <img className="logo_size" src={JavaScript_logo} alt="JavaScript" />
-            <img className="logo_size" src={Booystrap_logo} alt="Booystrap" />
-          </div>
-          <div className="logo_line">
-            <img className="logo_size" src={React_logo} alt="React.Js" />
-            <img className="logo_size" src={Figma_logo} alt="Figma" />
-            <img className="logo_size" src={SQL_logo} alt="SQL" />
-            <img className="logo_size" src={Python_logo} alt="Python" />
+          <div className="text_box">
+            <div id="project_header">
+              <Typewriter text={Heading_text} speed={50} />
+            </div>
+            <div className={`slide-fade-text ${show ? "active" : ""}`}>
+              {Description_text}
+            </div>
+            <div className="button_box">
+              <Link
+              style={{textDecoration:"none"}}
+                to={items[active].links}
+                className="button_butt"
+              >
+                website
+              </Link>
+              <Link
+              style={{textDecoration:"none"}}
+                to={items[active].design}
+                className={`button_butt ${designBoolen ? "" : "hide"}`}
+              >
+                dribbble
+              </Link>
+            </div>
           </div>
         </div>
       </div>

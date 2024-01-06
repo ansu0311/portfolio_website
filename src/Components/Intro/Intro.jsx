@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Intro.css"
 import statue from '../../Assets/pink-helment-12.png'
-import statue2 from '../../Assets/Screenshot_2023-11-21_114034-removebg-preview.png'
+import Marquee from "react-fast-marquee";
+import SkillList from "../../Data/SkillList";
 
 const Intro = () => {
   return (
@@ -23,6 +24,15 @@ const Intro = () => {
           <img src={statue} alt="3d blender" />
         </div>
       </div>
+      <div className="logo_line">
+        <Marquee gradientColor="#110e16" pauseOnHover="true" gradient="true" speed="100" gradientWidth="15rem">
+          {SkillList.map((Skill,index)=>{
+            return(<div className="logo_des"> 
+            <img key={index} className="logo_size" src={Skill.logo} alt={Skill.name} />
+          </div>)
+          })}
+          </Marquee>
+        </div>
     </div>
   )
 }

@@ -21,31 +21,31 @@
 }
 .Hero_left_text1 {
   font-family: "AMORIA Regular";
-  font-size: 3.5vw;
-  padding-bottom: 1.2vw;
+  font-size: 4rem;
+  padding-bottom: 1rem;
 }
 .Hero_left_text2 {
   width: 30vw;
   text-transform: uppercase;
   font-family: "Humane Regular";
-  font-size: 17.5vw;
-  line-height: 55%;
+  font-size: 15rem;
+  line-height: 54%;
   letter-spacing: -0.005em;
 }
 #designer_text{
-  font-size: 15.5vw;
+  font-size: 13.5rem;
 }
 #and {
   display: inline;
   font-family: "AMORIA Regular";
-  font-size: 5vw;
+  font-size: 4rem;
   letter-spacing: -0.15em;
 }
 .HeroRight {
   width: 30vw;
   height: 100%;
   font-family: "Nexa Bold";
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   padding: 0vw 1.5vw 0.5vw 0vw;
   display: flex;
   flex-direction: column;
@@ -86,23 +86,101 @@
   justify-content: right;
 }
 .hero_button {
-  border: 0.2vw solid var(--TextVoiletColor);
+  border: 0.2vw solid var(--textColor);
   border-radius: 3rem;
-  width: 10vw;
-  padding: 0.6vw 1.5vw;
-  font-size: 1.3vw;
+  padding: 0.5vw 1.2vw;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .hero_button:hover {
-  background-color: var(--textColor);
+  background-color: var(--lightAccent);
   color: var(--appColor);
-  border: 0.2vw solid var(--textColor);
+  border: 0.2vw solid var(--lightAccent);
   transition: 0.5s;
   scale: 1.05;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1441px) {
+  .HeroLeft {
+    padding: 0 0 0.5vw 1.5vw;
+  }
+  .Hero_left_text1 {
+    font-size: 3vw;
+    padding-bottom: 0.8vw;
+  }
+  .Hero_left_text2 {
+    font-size: 13.5vw;
+    line-height: 54%;
+  }
+  #designer_text{
+    font-size: 12vw;
+  }
+  #and {
+    font-size: 3.5vw;
+  }
   .HeroRight {
-    width: 28vw;
+    font-size: 1.25vw;
+    padding: 0vw 1.5vw 0.5vw 0vw;
+  }
+  .hero_button {
+    border: 0.2vw solid var(--textColor);
+    padding: 0.5vw 1.2vw;
+    font-size: 1.3vw;
+  }
+}
+@media screen and (max-width: 1025px){
+  .HeroLeft {
+    padding: 0 0 0.5vw 1.5vw;
+  }
+  .Hero_left_text1 {
+    font-size: 3vw;
+    padding-bottom: 0.8vw;
+  }
+  .Hero_left_text2 {
+    font-size: 13.5vw;
+    line-height: 54%;
+  }
+  #designer_text{
+    font-size: 12vw;
+  }
+  #and {
+    font-size: 3.5vw;
+  }
+  .HeroRight {
+    font-size: 1.4vw;
+    padding: 0vw 1.5vw 0.5vw 0vw;
+  }
+  .hero_button {
+    border: 0.2vw solid var(--textColor);
+    padding: 0.5vw 1.2vw;
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width:769px){
+  .HeroLeft {
+    padding: 0 0 0.5vw 1.5vw;
+  }
+  .Hero_left_text1 {
+    font-size: 5vw;
+    padding-bottom: 1vw;
+  }
+  .Hero_left_text2 {
+    font-size: 20vw;
+    line-height: 54%;
+  }
+  #designer_text{
+    font-size: 17vw;
+  }
+  #and {
+    font-size: 5vw;
+  }
+  .HeroRight {
+    font-size: 2vw;
+    padding: 0vw 1.5vw 0.5vw 0vw;
+  }
+  .hero_button {
+    border: 0.2vw solid var(--textColor);
+    padding: 0.8vw 1.5vw;
+    font-size: 2.5vw;
   }
 }
 @media screen and (max-width: 426px) {
