@@ -18,13 +18,12 @@
   width: 95vw;
   display: flex;
   align-items: center;
-  font-size: 1.4vw;
+  font-size: 1.4rem;
   justify-content: space-between;
-  padding: 0.4vw;
+  padding: 0.1rem;
   border-bottom: 1px solid var(--textColor);
   top: 0px;
   left: 0px;
-  margin-left: 2vw;
 }
 .Navleft {
   display: flex;
@@ -32,9 +31,8 @@
 }
 #name {
   font-family: "Nexa Bold";
-  color: var(--TextVoiletColor);
+  padding-left: 2rem;
   scale: 1.2;
-  padding-left: 1vw;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -44,17 +42,59 @@
 }
 .Navright li {
   transition: 0.5s;
-  padding-right: 1vw;
+  padding-right: 1rem;
 }
 .Navright > li:hover {
-  transition: 0.5s;
+  transition: 0.3s;
   scale: 1.2;
+  color: var(--lightAccent);
   cursor: pointer;
 }
-.invisble{
-  border: none;
+@media screen and (max-width: 1441px) {
+  .NavContainer {
+    font-size: 1.2vw;
+    padding: 0.0rem;
+    border-bottom: 1.5px solid var(--textColor);
+  }
+  #name {
+    padding-left: 2vw;
+    scale: 1.2;
+  }
+  .Navright li {
+    transition: 0.5s;
+    padding-right: 0.8vw;
+  }
 }
-
+@media screen and (max-width: 1025px) {
+  .NavContainer {
+    font-size: 1.2vw;
+    padding: 0.0rem;
+    border-bottom: 1.5px solid var(--textColor);
+  }
+  #name {
+    padding-left: 1.5vw;
+    scale: 1.2;
+  }
+  .Navright li {
+    transition: 0.5s;
+    padding-right: 0.8vw;
+  }
+}
+@media screen and (max-width:769px){
+  .NavContainer {
+    font-size: 2vw;
+    padding: 0.0rem;
+    border-bottom: 1.5px solid var(--textColor);
+  }
+  #name {
+    padding-left: 2.5vw;
+    scale: 1.2;
+  }
+  .Navright li {
+    transition: 0.5s;
+    padding-right: 1.2vw;
+  }
+}
 @media screen and (max-width: 426px) {
   .Navleft p {
     margin-left: 2.5vw;

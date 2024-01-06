@@ -10,35 +10,35 @@ import Python_logo from "../Assets/Skills/Python_logo.png";
 const SkillList = [
     {
         id:1,
-        name:"HTML_logo",
+        name:"HTML",
         logo: HTML_logo,
       },{
         id:2,
-        name:"CSS_logo",
+        name:"CSS",
         logo: CSS_logo,
       },{
         id:3,
-        name:"JavaScript_logo",
+        name:"JavaScript",
         logo: JavaScript_logo,
       },{
         id:4,
-        name:"Booystrap_logo",
+        name:"Booystrap",
         logo: Booystrap_logo,
       },{
         id:5,
-        name:"React_logo",
+        name:"React",
         logo: React_logo,
       },{
         id:6,
-        name:"Figma_logo",
+        name:"Figma",
         logo: Figma_logo,
       },{
         id:7,
-        name:"SQL_logo",
+        name:"SQL",
         logo: SQL_logo,
       },{
         id:8,
-        name:"Python_logo",
+        name:"Python",
         logo: Python_logo,
       },
     ]

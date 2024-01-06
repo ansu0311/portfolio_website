@@ -37,7 +37,7 @@ const Navbar = () => {
     <div
       className="Navbar"
       style={{
-        transition: "all 0.4s",
+        transition: "all 0.6s",
         backgroundColor: navbar,
         backdropFilter: blurPx,
       }}
@@ -75,7 +75,6 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <hr className="invisble"/>
     </div>
   );
 };

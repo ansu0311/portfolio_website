@@ -20,10 +20,11 @@
     url("../../Assets/font/NexaBold.ttf.woff") format("woff");
 }
 .Intro {
-  margin-top: 30vh;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .IntroContainer {
   width: 70vw;
@@ -31,7 +32,7 @@
   justify-content: center;
 }
 .IntroLeft {
-  width: 34%;
+  width: 27%;
   font-family: "Nexa Bold";
   text-align: left;
   padding: 5vw 6.5vw;
@@ -41,40 +42,154 @@
   margin: 3vw 0vw 1.5vw 0vw;
 }
 .left_header1 {
-  font-size: 6.65vw;
+  font-size: 5.5vw;
   font-family: "Humane Regular";
   text-transform: uppercase;
-  letter-spacing: 0.0058em;
+  letter-spacing: 0.06rem;
   line-height: 60%;
 }
 .left_header2 {
-  font-size: 1.3vw;
+  font-size: 1.15vw;
   font-family: "AMORIA Regular";
   color: var(--lightAccent);
 }
 .intro_left_discription {
   font-size: 1.4vw;
+  letter-spacing: 0.06rem;
   text-align: justify;
 }
-.IntroRight {
-  width: 59%;
-  display: flex;
-  justify-content: center;
-}
-.IntroRight img {
-  width: auto;
-  margin-top: 7vw;
-  height: 30vw;
-}
 .IntroRight1 {
-  width: 59%;
+  width: 50%;
   display: flex;
   justify-content: center;
 }
 .IntroRight1 img {
   width: auto;
-  margin-top: 7vw;
-  height: 25vw;
+  margin-top: 8vw;
+  height: 20vw;
+}
+.logo_line {
+  display: flex;
+  background-color: var(--appColor);
+  overflow: hidden;
+  width: 65vw;
+  height: 5vw;
+  align-items: center;
+  border-radius: 3rem;
+}
+.logo_des{
+  margin: 3.5vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.logo_size {
+  height: 2.5rem;
+  transition: all 0.5s ease;
+  filter: grayscale();
+  opacity: 0.7;
+}
+.logo_size:hover {
+  scale: 1.2;
+  transition: all 0.5s ease;
+  filter: none;
+  opacity: 1;
+}
+@media screen and (max-width: 1441px) {
+  .IntroContainer {
+    width: 75vw;
+  }
+  .IntroLeft {
+    width: 27%;
+    padding: 5vw 6.5vw;
+  }
+  .left_header1 {
+    font-size: 5.5vw;
+  }
+  .left_header2 {
+    font-size: 1.15vw;
+  }
+  .intro_left_discription {
+    font-size: 1.2vw;
+  }
+  .IntroRight1 img {
+    width: auto;
+    height: 20vw;
+  }
+  .logo_line {
+    width: 65vw;
+    height: 5vw;
+  }
+  .logo_des{
+    margin: 3.5vw;
+  }
+  .logo_size {
+    height: 2.5vw;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .IntroContainer {
+    width: 75vw;
+  }
+  .IntroLeft {
+    width: 27%;
+    padding: 5vw 6.5vw;
+  }
+  .left_header1 {
+    font-size: 5.5vw;
+  }
+  .left_header2 {
+    font-size: 1.15vw;
+  }
+  .intro_left_discription {
+    font-size: 1.2vw;
+  }
+  .IntroRight1 img {
+    width: auto;
+    height: 20vw;
+  }
+  .logo_line {
+    width: 65vw;
+    height: 5vw;
+  }
+  .logo_des{
+    margin: 3.5vw;
+  }
+  .logo_size {
+    height: 2.5vw;
+  }
+}
+@media screen and (max-width:769px){
+  .IntroContainer {
+    width: 75vw;
+  }
+  .IntroLeft {
+    width: 40%;
+    padding: 5vw 6.5vw;
+  }
+  .left_header1 {
+    font-size: 8vw;
+  }
+  .left_header2 {
+    font-size: 1.65vw;
+  }
+  .intro_left_discription {
+    font-size: 2vw;
+  }
+  .IntroRight1 img {
+    width: auto;
+    height: 30vw;
+  }
+  .logo_line {
+    width: 65vw;
+    height: 10vw;
+  }
+  .logo_des{
+    margin: 5vw;
+  }
+  .logo_size {
+    height: 5vw;
+  }
 }
 @media screen and (max-width: 426px) {
   .Intro {
@@ -88,23 +203,23 @@
     align-items: center;
   }
   .IntroLeft {
-    width: 100%;
+    width: 65%;
     font-family: "Nexa Bold";
     text-align: left;
     padding: 0vw 6.5vw;
   }
   .intro_left_header {
-    text-align: left;
+    text-align: right;
     margin: 4vw 0vw;
   }
   .left_header1 {
-    font-size: 12.5vw;
+    font-size: 15vw;
   }
   .left_header2 {
-    font-size: 4vw;
+    font-size: 3.2vw;
   }
   .intro_left_discription {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .IntroRight1 {
     width: 100%;
@@ -112,8 +227,22 @@
     justify-content: center;
   }
   .IntroRight1 img {
-    width: 80vw;
+    width: 50vw;
     height: auto;
     padding-bottom: 5vw;
   }
+.logo_line {
+margin-top: 8vw;
+  width: 80vw;
+  height: 10vw;
+}
+.logo_des{
+  margin: 8vw;
+}
+.logo_size {
+  height: 8vw;
+  transition: all 0.5s ease;
+  filter: grayscale();
+  opacity: 0.7;
+}
 }

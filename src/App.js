@@ -7,8 +7,20 @@ import Project from "../src/Components/Projects/Project";
 import Connect from "../src/Components/Connect/Connect";
 import { BrowserRouter } from "react-router-dom";
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { useState } from "react";
 
 function App() {
+
+  //preloader
+  const[loading,setLoading] = useState(true)
+  const spinner = document.getElementById("spinner")
+  if(spinner){
+    setTimeout(()=>{
+      spinner.style.display = "none"
+      setLoading(false)
+    },3500);
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
